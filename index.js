@@ -1,19 +1,21 @@
 var fs = require('fs')
 var path = require('path')
 
-var nightmare = require('nightmare')({ show: true })
+var nightmare = require('nightmare')({ show: false })
 var jsdom = require('jsdom')
 var dateFormat = require('dateformat')
 
 console.log('One moment. Logging in...')
 
+// InStreamLogin
+
 nightmare
-  .goto('https://twitter.com') // open twitter
-  .type('input#signin-email.text-input.email-input', process.argv[2]) // enter username
+  .goto('https://twitter.com/login') // open twitter
+  .type('input.js-username-field.email-input.js-initial-focus', process.argv[2]) // enter username
   .wait(1500)
-  .type('input#signin-password.text-input.flex-table-input', process.argv[3]) // enter password
+  .type('input.js-password-field', process.argv[3]) // enter password
   .wait(1500)
-  .click('.submit.btn.primary-btn.flex-table-btn.js-submit') // login
+  .click('button.submit.btn.primary-btn') // login
   .wait(5000)
   .scrollTo(999999, 0) // load more tweets
   .wait(1500)
@@ -86,7 +88,7 @@ function saveToText (filename, output) {
 
 // export tweet as image
 function saveToImage (filename, url) {
-  require('nightmare')({ show: true })
+  require('nightmare')({ show: false })
     .goto(url)
     .wait(1500)
     .screenshot(filename + '.png')
