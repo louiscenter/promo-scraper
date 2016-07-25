@@ -13,6 +13,7 @@ Twitter currently distributes different login pages depending on where you conne
 
 ```
 $ git clone https://github.com/louiscenter/promo-scraper.git
+$ cd promo-scraper
 $ npm install
 $ npm start <TWITTER_USERNAME> <TWITTER_PASSWORD>
 ```
