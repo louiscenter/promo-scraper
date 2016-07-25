@@ -1,0 +1,24 @@
+{
+  "name": "promo-scraper",
+  "version": "1.0.0",
+  "description": "scrape promoted tweets from your twitter timeline",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "louiscenter/promo-scraper",
+  "keywords": [
+    "twitter",
+    "scraper",
+    "scraping",
+    "promoted",
+    "advertising",
+    "analysis"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "dateformat": "^1.0.12",
+    "jsdom": "^9.4.1",
+    "nightmare": "^2.5.3"
+  }
+}
