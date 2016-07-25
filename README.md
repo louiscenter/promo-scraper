@@ -20,5 +20,11 @@ $ npm install
 $ npm start <TWITTER_USERNAME> <TWITTER_PASSWORD>
 ```
 
+## Todo
+- [ ] Support for different Twitter login pages
+- [ ] Add option to show browser window during scan
+- [ ] Use selector detection rather than timeouts for login/scrolling
+- [ ] Improve error handling
+
 ## License
 [MIT](https://tldrlegal.com/license/mit-license)
