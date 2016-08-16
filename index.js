@@ -7,8 +7,6 @@ var dateFormat = require('dateformat')
 
 console.log('One moment. Logging in...')
 
-// InStreamLogin
-
 nightmare
   .goto('https://twitter.com/login') // open twitter
   .type('input.js-username-field.email-input.js-initial-focus', process.argv[2]) // enter username
