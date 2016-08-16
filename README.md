@@ -1,3 +1,9 @@
+# NOTE: deprecated for promo-scraper-alt
+
+I have decided to deprecate this repository in favour of `promo-scraper-alt`, which you can find [here](https://github.com/louiscenter/promo-scraper).
+
+Unlike `promo-scraper`, `promo-scraper-alt` will take screenshots of promoted tweets directly from your home timeline, rather than visiting the promoted tweet URL in separate process. I wanted to do this incase `promo-scraper`'s screenshot method was accidentally influencing Twitter's ad delivery algorithm.
+
 # promo-scraper
 
 A promoted tweet scraper cobbled together in response to [this tweet](https://twitter.com/adamhrv/status/757202073972801536) by [Adam Harvey](https://twitter.com/adamhrv).
